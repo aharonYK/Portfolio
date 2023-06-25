@@ -12,7 +12,6 @@
 }
 
 
-/* styles.css */
 
 .ab {
     background-color: #222;
@@ -56,8 +55,8 @@
     font-family: Arial, sans-serif;
 padding: 0%;
   }
-  .teck {
-    
+
+  .teck {  
     margin-top: 0.5%;
     display: grid;
     width: 90%;
@@ -87,8 +86,6 @@ padding: 0%;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-
-
 .container{
   display: flex;
   justify-content: center; 
@@ -101,6 +98,55 @@ padding: 0%;
 
 @media (max-width: 767px) {
 
-  .audiowide {
+  .title{
+    margin: 0;
+     
+
+    font-size: medium;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #4796a4;
+  }
+.box {
+  border-radius: 7%;
+  display: flex;
+  flex: content;
+  
+  justify-content: left;
+  margin: 0;
+  margin-top: 5%;
+  background-color: transparent;
+  background-color: #4796a4;
+}
+  
+  .ab{
+    margin-top: 35%;
+    width: 75%;
+    height: 35%;
+  }
+  p{
+    font-size: medium;
+  }
+  .table{
+    margin-left: 0;
+  }
+  .skill{
+    height: 100%;
+  }
+  .teck {
+    
+    padding-top: 0;
+    margin-top: 0.5%;
+    display: grid;
+    width: 90%;
+    height: auto;
+    grid-template-columns: 1fr 1fr 1fr ;
+  
+   
+  }
+
+  .container {
+    max-width: 90%;
+   
+    margin: 0 auto;
   }
 }
