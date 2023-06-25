@@ -149,7 +149,7 @@ const Projects = () => {
                 </button>
               </a>
 
-              <a href="https://github.com/aharonYK/Quiz-Game">
+              <a href="https://tangerine-cajeta-708679.netlify.app/">
                 <button className="button">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

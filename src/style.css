@@ -60,5 +60,35 @@
   }
 
   body{
-    background-color: rgb(60, 68, 69);
+    background-color: rgb(107, 110, 111);
+  }
+
+  @media (max-width: 767px) {
+
+    .buttonH{
+      margin-right:15%;
+      font-size: 12%;
+      margin-top: 40%;
+
+    }
+    .logo{
+      width:10%;
+    }
+
+    .Header{
+      margin-left: 0;
+     position: inherit;
+     display: flex;  
+     }
+    .all{
+      z-index: 0;
+
+    }
+    #pro{
+      margin-top: 33%;
+    }
+    #res{
+      margin-top: 36%;
+    }
+
   }

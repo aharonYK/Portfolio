@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import "../style/about.css"
+import GitHubCalendar from 'react-github-calendar';
 
 const About = () => {
 
@@ -84,6 +85,9 @@ const About = () => {
         <span className='title'>MongoDB</span></div>
 
 </div>
+</div><h2>My Git:</h2>
+<div class="container">
+<GitHubCalendar username="aharonYK" />
 </div>
     </>
     );

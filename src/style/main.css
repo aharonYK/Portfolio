@@ -1,185 +1,212 @@
-.img1{
-    width: 10%;
-    margin-right: 5%;
-  }
+.img1 {
+  width: 10%;
+  margin-right: 5%;
+}
 
-  .Avatar{
-    width: 12%;    
-    position: relative;
-    margin-top: 5%;
-  }
-  .Avatar:hover{
-    will-change: transform;
-    transition: all 400ms cubic-bezier(0.03, 0.98, 0.52, 0.99) 0s;
-    transform:  rotateX(-15deg) rotateY(15deg) scale3d(1, 1, 1) ;
-    width: 11.5%;
-  }
+.Avatar {
+  width: 12%;
+  position: relative;
+  margin-top: 5%;
+}
 
-  .home{
-    margin-top: 15%;
-    margin-left: 15%;
-    position: relative;
-  }
+.Avatar:hover {
+  will-change: transform;
+  transition: all 400ms cubic-bezier(0.03, 0.98, 0.52, 0.99) 0s;
+  transform: rotateX(-15deg) rotateY(15deg) scale3d(1, 1, 1);
+  width: 11.5%;
+}
 
-  .hi{
-    font-size: xx-large;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: #090939;
-  }
-.pc{
+.home {
+  margin-top: 15%;
+  margin-left: 15%;
+  position: relative;
+}
+
+.hi {
+  font-size: xx-large;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #090939;
+}
+
+.pc {
   width: 30%;
   margin-top: -10%;
   margin-left: 60%;
-  
 }
 
-  
-.txt{
+.txt {
   color: #090939;
   font-size: x-large;
-text-shadow: 25%;
-font-weight: bold;
-font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-shadow: 25%;
+  font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-  
-  .content {
-    
-    margin-left: 10%;
-    animation: typing 3s steps(40), blink-caret 0.75s step-end infinite, erasing 2s 6s steps(40) infinite backwards;
+
+.content {
+  margin-left: 10%;
+  animation: typing 3s steps(40), blink-caret 0.75s step-end infinite, erasing 2s 6s steps(40) infinite backwards;
 }
-  
-  .content h2 {
-    color: #fff;
-    font-size: 1.7em;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    
-    
-  }
-  
-  .content h2:nth-child(1) {
-    color: transparent;
-    -webkit-text-stroke: 2px #52afda;
-  }
-  
-  .content h2:nth-child(2) {
-    color: #52afda;
-    animation: animate 4s ease-in-out infinite;
-  }
-  
-  @keyframes animate {
-    0%,
-    100% {
-      clip-path: polygon(
-        0% 45%,
-        16% 44%,
-        33% 50%,
-        54% 60%,
-        70% 61%,
-        84% 59%,
-        100% 52%,
-        100% 100%,
-        0% 100%
-      );
-    }
-  
-    50% {
-      clip-path: polygon(
-        0% 60%,
-        15% 65%,
-        34% 66%,
-        51% 62%,
-        67% 50%,
-        84% 45%,
-        100% 46%,
-        100% 100%,
-        0% 100%
-      );
-    }
-  }
 
+.content h2 {
+  color: #fff;
+  font-size: xx-large;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
 
+.content h2:nth-child(1) {
+  color: transparent;
+  -webkit-text-stroke: 2px #52afda;
+}
 
-
+.content h2:nth-child(2) {
+  color: #52afda;
+  animation: animate 4s ease-in-out infinite;
   
+}
+
+@keyframes animate {
+  0%,
+  100% {
+    clip-path: polygon(0% 45%, 16% 44%, 33% 50%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
+  }
+  50% {
+    clip-path: polygon(0% 60%, 15% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
+  }
+}
+
 .typewriter .text {
-    font-size: 1.5em;
-    margin-top: 5%;
-    color:rgb(12, 94, 171);
-    animation: typing 3s steps(40), erasing 2s 6s steps(40) infinite;
-    overflow: hidden;
-    white-space: nowrap;
+  font-size: 2.5em;
+  margin-top: 5%;
+  color: rgb(12, 94, 171);
+  animation: typing 3s steps(40), erasing 2s 6s steps(40) infinite;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+}
+
+@keyframes typing {
+  0% {
     width: 0;
   }
-  
-  @keyframes typing {
-    0% {
-      width: 0;
-    }
-    100% {
-      width: 100%;
-    }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes erasing {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 0;
+  }
+}
+
+.typewriter .text::after {
+  content: '|';
+  animation: caret-blink 0.75s infinite;
+}
+
+@keyframes caret-blink {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.introduction {
+  padding: 20px;
+  margin-top: 5%;
+  margin-left: 15%;
+  background-color: #333;
+  border-radius: 5px;
+  position: absolute;
+}
+
+.introduction h2 {
+  font-size: 2rem;
+  /* Adjust the font size as desired */
+  margin-bottom: 10px;
+  color: #fff;
+  /* Set the text color to white */
+}
+
+.introduction p {
+  font-size: 1rem;
+  /* Adjust the font size as desired */
+  line-height: 1.5;
+  color: #ccc;
+  /* Set the text color to a light gray */
+}
+
+.L {
+  font-size: 1.1rem;
+  color: #297cc6;
+  /* Set the text color to a light gray */
+}
+
+.social {
+  position: static;
+  margin-left: 1%;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+img {
+  width: 4rem;
+  margin-left: 1%;
+}
+
+/* Adjustments for mobile devices */
+@media (max-width: 767px) {
+  .Avatar {
+    width: 40%;
+   margin-top: 0%;
+    margin-left: 30%;
+    
   }
   
-  @keyframes erasing {
-    0% {
-      width: 100%;
-    }
-    100% {
-      width: 0;
-    }
-  }
   
-  .typewriter .text::after {
-    content: '|';
-    animation: caret-blink 0.75s infinite;
+  .content h2{
+    font-size: large;
+    margin-left: 25%;
   }
-  
-  @keyframes caret-blink {
-    0%, 100% {
-      opacity: 0;
-    }
-    50% {
-      opacity: 1;
-    }
-  }
-  
-  .introduction {
-    padding: 20px;
+
+  .pc {
+    width: 80%;
     margin-top: 5%;
-    margin-left: 15%;
-    background-color: #333;
-    border-radius: 5px;
-    position: absolute;
+    margin-left: 10%;
   }
-  
-  .introduction h2 {
-    font-size: 2rem; /* Adjust the font size as desired */
-    margin-bottom: 10px;
-    color: #fff; /* Set the text color to white */
-  }
-  
-  .introduction p {
-    font-size: 1rem; /* Adjust the font size as desired */
-    line-height: 1.5;
-    color: #ccc; /* Set the text color to a light gray */
-  }
-  
-  .L{
-    font-size: 1.1rem;
-    color: #297cc6; /* Set the text color to a light gray */
+
+  .introduction {
+    margin-top: 50%;
+    margin-left: 5%;
+    margin-right: 5%;
   }
 
   .social{
     position: relative;
-    margin-left: 1%;
-    font-size: 1.5rem;
-    color: #fff;
+    margin-top: 180%;
+    margin-left: 5%;
+  }
+  .whats{
+    margin-left: 5%;
+  }
+}
+
+/* Adjustments for larger screens */
+@media (min-width: 768px) {
+  .Avatar {
+    width: 12%;
+    margin-top: 5%;
   }
 
-  img{
-    width: 4rem;
-    margin-left: 1%;
+  .pc {
+    width: 30%;
+    margin-top: -10%;
+    margin-left: 60%;
   }
-
-  
+}
