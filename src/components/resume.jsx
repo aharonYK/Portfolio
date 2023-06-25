@@ -3,14 +3,14 @@ import { Document, Page, pdfjs } from 'react-pdf';
 import '../style/resume.css';
 
 import WhatsAppButton from './whatsapp';
-import EmailButton from './email';
+
 
 pdfjs.GlobalWorkerOptions.workerSrc = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
 const Resume = () => {
   const downloadResume = () => {
     const link = document.createElement('a');
-    link.href = '/CV-aharon k.pdf';
+    link.href = '/CV-Aharon Karsenti.pdf';
     link.download = 'Your_Name_Resume.pdf';
     link.click();
   };
