@@ -11,7 +11,7 @@ const Resume = () => {
   const downloadResume = () => {
     const link = document.createElement('a');
     link.href = '/CV-Aharon Karsenti.pdf';
-    link.download = 'Your_Name_Resume.pdf';
+    link.download = 'CV-aharon k.pdf';
     link.click();
   };
 
