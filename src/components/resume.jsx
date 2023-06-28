@@ -11,7 +11,7 @@ const Resume = () => {
   const downloadResume = () => {
     const link = document.createElement('a');
     link.href = '/CV-Aharon Karsenti.pdf';
-    link.download = 'CV-aharon k.pdf';
+    link.download = 'CV-Aharon Karsenti.pdf';
     link.click();
   };
 
@@ -26,7 +26,7 @@ const Resume = () => {
       </button>
 
       <div className="pdf-preview">
-        <Document file="/CV-aharon k.pdf">
+        <Document file="/CV-Aharon Karsenti.pdf">
           <Page
             pageNumber={1}
             width={400}
